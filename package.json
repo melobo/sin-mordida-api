@@ -1,0 +1,26 @@
+{
+  "name": "sin-mordida-api",
+  "version": "1.0.0",
+  "description": "Proyecto final Kodemia, api Sin Mordida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melobo/sin-mordida-api.git"
+  },
+  "keywords": [
+    "kodemia",
+    "api",
+    "transito",
+    "cdmx",
+    "sinMordida"
+  ],
+  "author": "@OscarPantoja, @melobo, @tuxdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melobo/sin-mordida-api/issues"
+  },
+  "homepage": "https://github.com/melobo/sin-mordida-api#readme"
+}
