@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const articlesSchema = new mongoose.Schema({
   title: {
@@ -26,10 +26,10 @@ const articlesSchema = new mongoose.Schema({
     type: Object,
     trim: true,
     default: {
-      idFraccion: "",
-      titleFraccion: "",
-      description: "",
-      umas: "",
+      idFraccion: '',
+      titleFraccion: '',
+      description: '',
+      umas: '',
       isPound: false,
       incisos: [
         // Incisos debe ir vacio, con la estructura comentada debajo
@@ -62,6 +62,6 @@ const articlesSchema = new mongoose.Schema({
       ]
     }
   }
-});
+})
 
-module.exports = mongoose.model("Articles", articlesSchema);
+module.exports = mongoose.model('Articles', articlesSchema)
