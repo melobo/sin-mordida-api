@@ -6,11 +6,11 @@ const server = require('./src/server')
 
 db
   .then(() => {
-    console.log('connection ok')
+    console.log('Connection OK')
     server.listen(8080, () => {
       console.log('Server runnig')
     })
   })
   .catch(error => {
-    console.error('failed connection', error)
+    console.error('Failed connection', error)
   })
