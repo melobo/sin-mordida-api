@@ -1,0 +1,85 @@
+{
+    "capitulo": 2,
+    "articulo": 43,
+    "fraccion": {
+        "I":{
+            "FRACION":"I",
+            "UMAS":"10 a 20 veces",
+            "multaPesos":"2000",
+            "isPound":true
+        },
+        "II":"fraccion II",
+        "III":"fraccion III",
+        "IV":"fraccion IV",
+        "V":"fraccion V",
+        "VI":"fraccion VI",
+        "VII":"fraccion VII"
+    },
+    "inciso": "N/A",
+    "UMAS": "10 a 30 veces",
+    "multaPesos": "2000",
+    "puntosPenalizacion": "N/A",
+    "isPound": false
+}
+
+{
+    "capitulo": 1,
+    "articulo": 4,
+    "abstract":"Diccionario Reglamento",
+    "fraccion": {
+        "10":{ // Flotante o entero
+            "FRACION":"X",
+            "UMAS":"N/A", //String
+            "multaPesos":"N/A",
+            "isPound":false,
+            "description":"Circulación, desplazamiento por la vía pública de peatones, conductores y ocupantes de vehículos",
+            "incisos": {}
+        },
+        "10.1":{
+            "FRACION":"X Bis",
+            "UMAS":"N/A", // String
+            "multaPesos":"N/A", // String
+            "isPound":false,
+            "description":"Cochera, cajón de estacionamiento en el interior de un inmueble con capacidad para uno o más vehículos"
+        }
+        "II":"fraccion II",
+        "III":"fraccion III",
+        "IV":"fraccion IV",
+        "V":"fraccion V",
+        "VI":"fraccion VI",
+        "VII":"fraccion VII"
+    },
+    "inciso": "N/A",
+    "puntosPenalizacion": "N/A",
+}
+
+{
+    "capitulo": 1,
+    "articulo": 4,
+    "abstract":"Diccionario Reglamento",
+    "fraccion": [
+        "10":{ // Flotante o entero
+            "FRACION":"X",
+            "UMAS":"N/A", //String
+            "multaPesos":"N/A",
+            "isPound":false,
+            "description":"Circulación, desplazamiento por la vía pública de peatones, conductores y ocupantes de vehículos",
+            "incisos": {}
+        },
+        "10.1":{
+            "FRACION":"X Bis",
+            "UMAS":"N/A", // String
+            "multaPesos":"N/A", // String
+            "isPound":false,
+            "description":"Cochera, cajón de estacionamiento en el interior de un inmueble con capacidad para uno o más vehículos"
+        }
+        "II":"fraccion II",
+        "III":"fraccion III",
+        "IV":"fraccion IV",
+        "V":"fraccion V",
+        "VI":"fraccion VI",
+        "VII":"fraccion VII"
+    ],
+    "inciso": "N/A",
+    "puntosPenalizacion": "N/A",
+}

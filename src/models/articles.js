@@ -1,28 +1,18 @@
-
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const articlesSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  chapter: {
+    type: String,
+    required: true,
+    trim: true
+  },
   articleId: {
     type: Number,
-    required: true,
-    trim: true
-  },
-  section: {
-    type: String,
-    minlength: 1,
-    required: true,
-    trim: true
-  },
-  subSection: {
-    type: Number,
-    minlength: 3,
-    maxlength: 100,
-    required: true,
-    trim: true
-  },
-  umas: {
-    type: Number,
-    minlength: 1,
     required: true,
     trim: true
   },
@@ -32,14 +22,38 @@ const articlesSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+  fraction: {
+    type: Object,
+    trim: true,
+    default: {
+      idFraccion: "",
+      titleFraccion: "",
+      description: "",
+      umas: "",
+      isPound: false,
+      incisos: [
+        // Incisos debe ir vacio, con la estructura comentada debajo
+        // {
+        //   titleInciso: "",
+        //   description: ""
+        // }
+      ]
+    }
+  },
+  umas: {
+    type: Number,
+    minlength: 1,
+    required: true,
+    trim: true
+  },
   points: {
     type: Number,
     trim: true
   },
-  pound: {
+  isPound: {
     type: String,
     trim: true
   }
-})
+});
 
-module.exports = mongoose.model('Articles', articlesSchema)
+module.exports = mongoose.model("Articles", articlesSchema);
