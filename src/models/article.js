@@ -1,8 +1,6 @@
-// Este es el final xD
-
 const mongoose = require('mongoose')
 
-const articlesSchema = new mongoose.Schema({
+const articleSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -67,6 +65,7 @@ const articlesSchema = new mongoose.Schema({
       ]
     }
   },
+
   tags: {
     type: String,
     trim: true,
@@ -75,4 +74,4 @@ const articlesSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('Articles', articlesSchema)
+module.exports = mongoose.model('Article', articleSchema)

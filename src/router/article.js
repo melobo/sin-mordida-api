@@ -1,6 +1,6 @@
-const express = require('express')
 
-const article = require('../models/article')
+const express = require('express')
+const article = require('../usecases/article')
 
 const router = express.Router()
 
