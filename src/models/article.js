@@ -65,7 +65,6 @@ const articleSchema = new mongoose.Schema({
       ]
     }
   },
-
   tags: {
     type: String,
     trim: true,
