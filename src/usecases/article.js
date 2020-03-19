@@ -18,8 +18,8 @@ function getById(id) {
     return Article.findById(id)
 }
 
-function updateById(id, koderInfoToUpdate) {
-    return Article.findByIdAndUpdate(id, koderInfoToUpdate)
+function updateById(id, articleInfoToUpdate) {
+    return Article.findByIdAndUpdate(id, articleInfoToUpdate)
 }
 
 module.exports = {
