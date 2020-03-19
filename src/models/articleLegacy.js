@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
 
 const articleSchema = new mongoose.Schema({
-  title: {
+  chapter: {
     type: String,
     required: true,
     trim: true,
     toLowerCase: true
   },
-  chapter: {
+  title: {
     type: String,
     required: true,
     trim: true,
@@ -29,24 +29,22 @@ const articleSchema = new mongoose.Schema({
     type: Object,
     trim: true,
     toLowerCase: true,
-    default: [
-      {
-        idFraccion: '',
-        titleFraccion: '',
-        description: '',
-        incisos: [],
-        umas: [],
-        points: [],
-        isPound: {}
-      }
-    ]
+  },
+  complement: {
+    type: String,
+    trim:true,
+    toLowerCase:true
+  },
+  table:{
+    type: Object,
+    trim: true,
+    toLowerCase: true
   },
   tags: {
     type: Object,
     trim: true,
-    required: false,
-    toLowerCase: true,
-    default: []
+    required: true,
+    toLowerCase: true
   }
 })
 

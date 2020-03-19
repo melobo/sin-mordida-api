@@ -4,7 +4,7 @@ const article = require('../usecases/article')
 
 const router = express.Router()
 
-//router.use(auth)
+// router.use(auth)
 
 router.get('/', async (request, response) => {
   try {
