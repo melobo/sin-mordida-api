@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
 
 const articleSchema = new mongoose.Schema({
-  title: {
+  chapter: {
     type: String,
     required: true,
     trim: true,
     toLowerCase: true
   },
-  chapter: {
+  title: {
     type: String,
     required: true,
     trim: true,
@@ -25,44 +25,23 @@ const articleSchema = new mongoose.Schema({
     trim: true,
     toLowerCase: true
   },
-  fraction: {
+  fractions: {
     type: Object,
     trim: true,
     toLowerCase: true,
-    default: {
-      idFraccion: '',
-      titleFraccion: '',
-      description: '',
-      incisos: [
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable
-        //   titleInciso: "",
-        //   description: "",
-        //   toLowerCase: true
-        // }
-      ],
-      umas: [
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable, aqui sería Number
-        //   valueUMAS: ""
-        // }
-      ],
-      points: [
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable, sería Number
-        //   valuePoints: "",
-        // }
-      ],
-      isPound: [
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable, aquí sería Booleano
-        //   valueIsPound: "",
-        // }
-      ]
-    }
+  },
+  complement: {
+    type: String,
+    trim:true,
+    toLowerCase:true
+  },
+  table:{
+    type: Object,
+    trim: true,
+    toLowerCase: true
   },
   tags: {
-    type: String,
+    type: Object,
     trim: true,
     required: true,
     toLowerCase: true

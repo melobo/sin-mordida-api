@@ -1,8 +1,8 @@
 
-const Article = require('../models/article')
+const Article = require('../models/articleLegacy')
 
-function create ({ title, chapter, articleId, abstract, fraction, tags }) {
-  const newArticle = new Article({ title, chapter, articleId, abstract, fraction, tags })
+function create ({ chapter, title, articleId, abstract, fractions, complement, table, tags }) {
+  const newArticle = new Article({ chapter, title, articleId, abstract, fractions, complement, table, tags })
   return newArticle.save()
 }
 

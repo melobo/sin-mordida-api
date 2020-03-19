@@ -79,3 +79,29 @@
 	"abstract": "Lorem ipsum",
 	"tags": ["Test", "1", "modelo"]
 }
+
+ {
+	"chapter": "CAPÍTULO II",
+	"title": "DE LAS NORMAS GENERALES PARA LA CIRCULACIÓN DE VEHÍCULOS",
+	"articleId": 12,
+	"abstract": "Está prohibido remolcar o empujar otros vehículos motorizados si no es por medio de
+una grúa, excepto cuando:",
+	"fractions":[
+			"I: Se trate de remolques u otros vehículos expresamente diseñados para este fin",
+			"II: El vehículo se encuentre obstruyendo la circulación",
+			"III: El vehículo a remolcar o empujar represente un peligro para sí o para terceros, en éste caso
+sólo se permitirá hasta ponerlo en un lugar seguro"
+	],
+	"complement":"Se exceptúan de lo anterior a los vehículos de transporte público en cualquiera de sus
+modalidades, que sólo podrán ser remolcados por una grúa.
+Los conductores que incumplan lo dispuesto en este artículo serán sancionados de acuerdo a la
+siguiente tabla:"
+"table":[
+	{
+		"umas": "10 a 20 veces",
+		"points": "3 puntos",
+		"isPound": "false"
+	}
+],
+	"tags": ["12", "remolcar", "grua"]
+}
