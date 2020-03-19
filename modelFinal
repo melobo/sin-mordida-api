@@ -1,5 +1,5 @@
 
-// FINAL
+// FINAL PREVIEW
 
 {
   "fraccions": [
@@ -28,27 +28,54 @@
   "tags": ["Test", "4"]
 }
 
-// POSTMAN
+// POSTMAN BODY
 
  {
 	"fractions": [
 		{
-			"1" : {
-			    "idFraccion": "1",
-			    "titleFraccion": "I",
-			    "description": "Esta es la fracción 1",
-			    "incisos": [],
-			    "umas": [],
-			    "points": [],
-			    "isPound": {
-			    	"valueIsPound": false
-			    }
+		    "idFraccion": "1",
+		    "titleFraccion": "I",
+		    "description": "Esta es la fracción I",
+		    "incisos": [
+		    	{
+		    		"titleInciso": "a",
+		    		"descriptionIniciso":"Este es el inciso a"
+		    	},
+          {
+              "titleInciso": "b",
+              "descriptionIniciso": "Este es el inciso b"
+          }
+		    ],
+		    "umas": [],
+		    "points": [],
+		    "isPound": {
+		    	"valueIsPound": false
+			}
+		},
+		{
+		    "idFraccion": "2",
+		    "titleFraccion": "II",
+		    "description": "Esta es la fracción 2",
+		    "incisos": [
+		    	{
+		    		"titleInciso": "a",
+		    		"descriptionIniciso":"Este es el inciso a"
+		    	},
+          {
+              "titleInciso": "b",
+              "descriptionIniciso": "Este es el inciso b"
+          }
+		    ],
+		    "umas": [],
+		    "points": [],
+		    "isPound": {
+		    	"valueIsPound": false
 			}
 		}
 	],
 	"title": "Título 1",
 	"chapter": "Capítulo 1",
-	"articleId": 4,
+	"articleId": 1,
 	"abstract": "Lorem ipsum",
-	"tags": ["Test", "4"]
+	"tags": ["Test", "1", "modelo"]
 }

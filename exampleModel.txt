@@ -1,7 +1,7 @@
 {
     "capitulo": 2,
     "articulo": 43,
-    "fraccion": {
+    "fracciones": {
         "I": {
             "FRACION": "I",
             "UMAS": "10 a 20 veces",

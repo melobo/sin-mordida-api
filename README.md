@@ -1,2 +1,3 @@
 # sin-mordida-api
-api de sinMordida
+
+Consulta el reglamento de tránsito de la CDMX (2020)

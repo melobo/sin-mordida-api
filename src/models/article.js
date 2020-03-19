@@ -41,15 +41,6 @@ const articleSchema = new mongoose.Schema({
       }
     ]
   },
-  // tags: {
-  //   type: Object,
-  //   trim: true,
-  //   required: false,
-  //   toLowerCase: true,
-  //   default: {
-  //     tags: []
-  //   }
-  // }
   tags: {
     type: Object,
     trim: true,
