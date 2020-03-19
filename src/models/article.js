@@ -25,51 +25,37 @@ const articleSchema = new mongoose.Schema({
     trim: true,
     toLowerCase: true
   },
-  fraction: {
+  fractions: {
     type: Object,
     trim: true,
     toLowerCase: true,
-    default: {
-      idFraccion: '',
-      titleFraccion: '',
-      description: '',
-      incisos: [
-        // Incisos debe ir vacio, con la estructura comentada debajo
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable
-        //   titleInciso: "",
-        //   description: "",
-        //   toLowerCase: true
-        // }
-      ],
-      umas: [
-        // Incisos debe ir vacio, con la estructura comentada debajo
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable, aqui sería Number
-        //   valueUMAS: ""
-        // }
-      ],
-      points: [
-        // Incisos debe ir vacio, con la estructura comentada debajo
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable, sería Number
-        //   valuePoints: "",
-        // }
-      ],
-      isPound: [
-        // Incisos debe ir vacio, con la estructura comentada debajo
-        // {
-        // No sé si igual se deba indicar acá el type para saber el tipo de variable, aquí sería Booleano
-        //   valueIsPound: "",
-        // }
-      ]
-    }
+    default: [
+      {
+        idFraccion: '',
+        titleFraccion: '',
+        description: '',
+        incisos: [],
+        umas: [],
+        points: [],
+        isPound: {}
+      }
+    ]
   },
+  // tags: {
+  //   type: Object,
+  //   trim: true,
+  //   required: false,
+  //   toLowerCase: true,
+  //   default: {
+  //     tags: []
+  //   }
+  // }
   tags: {
-    type: String,
+    type: Object,
     trim: true,
-    required: true,
-    toLowerCase: true
+    required: false,
+    toLowerCase: true,
+    default: []
   }
 })
 

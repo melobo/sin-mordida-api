@@ -1,0 +1,54 @@
+
+// FINAL
+
+{
+  "fraccions": [
+    {
+      "10": { // Flotante o entero, el key para identificarlo
+        "FRACION": "X", // el value para mostrar
+        "UMAS": "N/A", //String
+        "multaPesos": "N/A",
+        "isPound": false,
+        "description": "Circulación, desplazamiento por la vía pública de peatones, conductores y ocupantes de vehículos",
+        "incisos": {}
+      },
+      "10.1": {
+        "FRACION": "X Bis",
+        "UMAS": "N/A", // String
+        "multaPesos": "N/A", // String
+        "isPound": false,
+        "description": "Cochera, cajón de estacionamiento en el interior de un inmueble con capacidad para uno o más vehículos"
+      }
+    }
+  ],
+  "title": "Título 1",
+  "capitulo": 1,
+  "articulo": 4,
+  "abstract": "Diccionario Reglamento",
+  "tags": ["Test", "4"]
+}
+
+// POSTMAN
+
+ {
+	"fractions": [
+		{
+			"1" : {
+			    "idFraccion": "1",
+			    "titleFraccion": "I",
+			    "description": "Esta es la fracción 1",
+			    "incisos": [],
+			    "umas": [],
+			    "points": [],
+			    "isPound": {
+			    	"valueIsPound": false
+			    }
+			}
+		}
+	],
+	"title": "Título 1",
+	"chapter": "Capítulo 1",
+	"articleId": 4,
+	"abstract": "Lorem ipsum",
+	"tags": ["Test", "4"]
+}
