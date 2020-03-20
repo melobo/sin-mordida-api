@@ -1,52 +1,35 @@
+
 const mongoose = require('mongoose')
 
 const articleSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true,
-    trim: true,
-    toLowerCase: true
-  },
   chapter: {
-    type: String,
+    type: Array,
     required: true,
-    trim: true,
-    toLowerCase: true
+  },
+  title: {
+    type: Array,
+    required: true,
   },
   articleId: {
     type: Number,
     required: true,
-    trim: true
   },
   abstract: {
     type: String,
-    minlength: 3,
+    minlength: 10,
     required: true,
     trim: true,
     toLowerCase: true
   },
-  fractions: {
-    type: Object,
+  table: {
+    type: String,
+    minlength: 3,
     trim: true,
-    toLowerCase: true,
-    default: [
-      {
-        idFraccion: '',
-        titleFraccion: '',
-        description: '',
-        incisos: [],
-        umas: [],
-        points: [],
-        isPound: {}
-      }
-    ]
+    toLowerCase: true
   },
   tags: {
-    type: Object,
-    trim: true,
-    required: false,
-    toLowerCase: true,
-    default: []
+    type: Array,
+    required: true
   }
 })
 
