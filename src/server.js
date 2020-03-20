@@ -8,6 +8,6 @@ const app = express()
 // app.use(cors())
 app.use(express.json())
 
-app.use('/articles', articlesRouter)
+app.use('/api/v1/articles', articlesRouter)
 
 module.exports = app
