@@ -2,14 +2,6 @@
 const mongoose = require('mongoose')
 
 const articleSchema = new mongoose.Schema({
-  chapter: {
-    type: Array,
-    required: true,
-  },
-  title: {
-    type: Array,
-    required: true,
-  },
   articleId: {
     type: Number,
     required: true,
@@ -21,11 +13,24 @@ const articleSchema = new mongoose.Schema({
     trim: true,
     toLowerCase: true
   },
-  table: {
-    type: String,
-    minlength: 3,
-    trim: true,
-    toLowerCase: true
+  fractions: {
+    type: Array
+  },
+  umas: {
+    type: Boolean,
+    required: true
+  },
+  licensePoints: {
+    type: Boolean,
+    required: true
+  },
+  platePoints: {
+    type: Boolean,
+    required: true
+  },
+  isPound: {
+    type: Boolean,
+    required: true
   },
   tags: {
     type: Array,
