@@ -28,14 +28,14 @@ const articleSchema = new mongoose.Schema({
   fractions: {
     type: Object,
     trim: true,
-    toLowerCase: true,
+    toLowerCase: true
   },
   complement: {
     type: String,
-    trim:true,
-    toLowerCase:true
+    trim: true,
+    toLowerCase: true
   },
-  table:{
+  table: {
     type: Object,
     trim: true,
     toLowerCase: true
