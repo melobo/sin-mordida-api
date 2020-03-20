@@ -1,0 +1,79 @@
+{
+	"chapter": "CAPÍTULO II",
+	"title": "DE LAS NORMAS GENERALES PARA LA CIRCULACIÓN DE VEHÍCULOS",
+	"articleId": 12,
+	"abstract": "Está prohibido remolcar o empujar otros vehículos motorizados si no es por medio de una grúa, excepto cuando:",
+	"fractions":[
+			"I: Se trate de remolques u otros vehículos expresamente diseñados para este fin",
+			"II: El vehículo se encuentre obstruyendo la circulación",
+			"III: El vehículo a remolcar o empujar represente un peligro para sí o para terceros, en éste caso sólo se permitirá hasta ponerlo en un lugar seguro"
+	],
+	"complement":"Se exceptúan de lo anterior a los vehículos de transporte público en cualquiera de sus modalidades, que sólo podrán ser remolcados por una grúa. Los conductores que incumplan lo dispuesto en este artículo serán sancionados de acuerdo a la siguiente tabla:",
+"table":[
+	
+		"umas: 10 a 20 veces",
+		"points: 3 puntos",
+		"isPound: false"
+	
+],
+	"tags": [
+		"12",
+	"remolcar",
+	"grua"
+	]
+}
+
+{
+	"articleId": 15,
+	"abstract": "este es el articulo 15:",
+	"fractions":{
+        "fraction":{
+			"fraction1":
+		}
+    },
+	"complement":"Los conductores de vehículos motorizados que no cedan el paso a los vehículos no motorizados de
+    acuerdo a lo dispuesto en este artículo, serán sancionados con base en la siguiente tabla:",
+"table":[
+	
+		"umas: 10 a 20 veces",
+		"points: 3 puntos",
+		"isPound: false"
+	
+],
+	"tags": [
+        "semaforo",
+        "luz verde",
+        "ceder paso"
+	]
+}
+
+
+{
+	"chapter": "CAPÍTULO III",
+	"title": "DE LA CIRCULACIÓN DE VEHÍCULOS NO MOTORIZADOS",
+	"articleId": 15,
+	"abstract": "Los conductores de vehículos no motorizados tienen preferencia de paso sobre los vehículos motorizados:",
+	"fractions":{
+		"I": "En las intersecciones controladas por semáforos, cuando:"
+			{
+			"A":"La luz verde les otorgue el paso",
+			"B":"Habiéndoles correspondido el paso de acuerdo con el ciclo del semáforo no alcancen a cruzar la vía",
+			"C":"Sigan de frente en la vía y los vehículos motorizados vayan a realizar un giro para incorporarse a una vía transversal"
+			},
+        "II":"En las intersecciones que no cuenten con semáforos, independientemente de las reglas establecidas en el artículo 10; cuando haya vehículos no motorizados esperando pasar, los conductores de vehículos motorizados deberán frenar y cederles el paso.",
+        "III" : "Cuando circulen por una vía ciclista exclusiva y los vehículos motorizados vayan a realizar un giro para entrar o salir de un predio."
+    },
+	"complement":"Los conductores de vehículos motorizados que no cedan el paso a los vehículos no motorizados de acuerdo a lo dispuesto en este artículo, serán sancionados con base en la siguiente tabla:",
+"table":[
+	
+		"umas: 10 a 20 veces",
+		"points: 3 puntos",
+		"isPound: false"
+	
+],
+	"tags": [
+        "semaforo",
+        "luz verde",
+        "ceder paso"
+	]
+}

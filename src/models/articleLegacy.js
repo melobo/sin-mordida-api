@@ -26,7 +26,7 @@ const articleSchema = new mongoose.Schema({
     toLowerCase: true
   },
   fractions: {
-    type: Object,
+    type: Array,
     trim: true,
     toLowerCase: true,
   },
