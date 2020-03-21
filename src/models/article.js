@@ -16,6 +16,13 @@ const articleSchema = new mongoose.Schema({
   fractions: {
     type: Array
   },
+  table: {
+    type: String,
+    minlength: 3,
+    trim: true,
+    toLowerCase: true
+
+  },
   umas: {
     type: Boolean,
     required: true

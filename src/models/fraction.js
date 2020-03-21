@@ -3,8 +3,11 @@ const mongoose = require('mongoose')
 
 const fractionSchema = new mongoose.Schema({
     fractionId: {
-        type: Number,
+        type: String,
+        minlength: 3,
         required: true,
+        trim: true,
+        toLowerCase: true
     },
     fractionNumber: {
         type: String,
@@ -28,26 +31,6 @@ const fractionSchema = new mongoose.Schema({
     },
     items: {
         type: Array
-    },
-    umas: {
-        type: Boolean,
-        required: true
-    },
-    licensePoints: {
-        type: Boolean,
-        required: true
-    },
-    platePoints: {
-        type: Boolean,
-        required: true
-    },
-    isPound: {
-        type: Boolean,
-        required: true
-    },
-    tags: {
-        type: Array,
-        required: true
     }
 })
 

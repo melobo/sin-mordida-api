@@ -3,8 +3,11 @@ const mongoose = require('mongoose')
 
 const itemSchema = new mongoose.Schema({
     itemId: {
-        type: Number,
+        type: String,
+        minlength: 3,
         required: true,
+        trim: true,
+        toLowerCase: true
     },
     itemLetter: {
         type: String,
@@ -19,26 +22,6 @@ const itemSchema = new mongoose.Schema({
         required: true,
         trim: true,
         toLowerCase: true
-    },
-    umas: {
-        type: Boolean,
-        required: true
-    },
-    licensePoints: {
-        type: Boolean,
-        required: true
-    },
-    platePoints: {
-        type: Boolean,
-        required: true
-    },
-    isPound: {
-        type: Boolean,
-        required: true
-    },
-    tags: {
-        type: Array,
-        required: true
     }
 })
 

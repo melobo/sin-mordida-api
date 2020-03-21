@@ -1,24 +1,24 @@
 
-const Article = require('../models/articleLegacy')
+const Article = require('../models/article')
 
-function create ({ chapter, title, articleId, abstract, fractions, complement, table, tags }) {
-  const newArticle = new Article({ chapter, title, articleId, abstract, fractions, complement, table, tags })
+function create({ articleId, abstract, fractions, table, umas, licensePoints, platePoints, isPound, tags }) {
+  const newArticle = new Article({ articleId, abstract, fractions, table, umas, licensePoints, platePoints, isPound, tags })
   return newArticle.save()
 }
 
-function deleteById (id) {
+function deleteById(id) {
   return Article.findByIdAndDelete(id)
 }
 
-function getAll () {
+function getAll() {
   return Article.find({})
 }
 
-function getById (id) {
+function getById(id) {
   return Article.findById(id)
 }
 
-function updateById (id, articleInfoToUpdate) {
+function updateById(id, articleInfoToUpdate) {
   return Article.findByIdAndUpdate(id, articleInfoToUpdate)
 }
 
