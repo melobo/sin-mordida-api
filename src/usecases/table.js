@@ -1,8 +1,8 @@
 
 const Table = require('../models/table')
 
-function create({ tableId, fraction, vehicleType, umas, licensePoints, platePoints }) {
-  const newTable = new Table({ tableId, fraction, vehicleType, umas, licensePoints, platePoints })
+function create({ tableId, fraction, vehicleType, umas, licensePoints, platePoints, previousText }) {
+  const newTable = new Table({ tableId, fraction, vehicleType, umas, licensePoints, platePoints, previousText })
   return newTable.save()
 }
 
