@@ -15,7 +15,7 @@ function getAll() {
 }
 
 function getById(id) {
-  return Fraction.findById(id)
+  return Fraction.find({ fractionId: id })
 }
 
 function updateById(id, fractionInfoToUpdate) {

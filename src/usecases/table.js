@@ -15,7 +15,7 @@ function getAll() {
 }
 
 function getById(id) {
-  return Table.findById(id)
+  return Table.find({ tableId: id })
 }
 
 function updateById(id, tableInfoToUpdate) {

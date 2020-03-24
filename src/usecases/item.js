@@ -15,7 +15,7 @@ function getAll() {
 }
 
 function getById(id) {
-  return Item.findById(id)
+  return Item.find({ itemId: id })
 }
 
 function updateById(id, itemInfoToUpdate) {
