@@ -10,19 +10,24 @@ const tableSchema = new mongoose.Schema({
         toLowerCase: true
     },
     fraction: {
-        type: Array
+        type: Array,
+        default: []
     },
     vehicleType: {
-        type: Array
+        type: Array,
+        default: []
     },
     umas: {
-        type: Array
+        type: Array,
+        default: []
     },
     licensePoints: {
-        type: Array
+        type: Array,
+        default: []
     },
     platePoints: {
-        type: Array
+        type: Array,
+        default: []
     },
     previousText: {
         type: String,

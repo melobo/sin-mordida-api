@@ -14,14 +14,15 @@ const articleSchema = new mongoose.Schema({
     toLowerCase: true
   },
   fractions: {
-    type: Array
+    type: Array,
+    default: []
   },
   table: {
     type: String,
     minlength: 3,
     trim: true,
-    toLowerCase: true
-
+    toLowerCase: true,
+    default: ''
   },
   umas: {
     type: Boolean,

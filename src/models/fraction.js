@@ -27,10 +27,12 @@ const fractionSchema = new mongoose.Schema({
         type: String,
         minlength: 5,
         trim: true,
-        toLowerCase: true
+        toLowerCase: true,
+        default: ''
     },
     items: {
-        type: Array
+        type: Array,
+        default: []
     }
 })
 
