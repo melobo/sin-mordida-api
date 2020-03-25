@@ -25,7 +25,6 @@ const fractionSchema = new mongoose.Schema({
     },
     finalText: {
         type: String,
-        minlength: 5,
         trim: true,
         toLowerCase: true,
         default: ''
