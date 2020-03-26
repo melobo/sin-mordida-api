@@ -8,6 +8,17 @@ const router = express.Router()
 
 router.get('/', async (request, response) => {
     try {
+        if (request.query.text) {
+            const fractionFound = await fraction.getByText(request.query.text)
+
+            response.json({
+                success: true,
+                message: 'Fraction found',
+                data: {
+                    fraction: fractionFound
+                }
+            })
+        }
         const allFractions = await fraction.getAll()
         response.json({
             success: true,

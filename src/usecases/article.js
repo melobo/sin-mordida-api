@@ -18,6 +18,10 @@ function getById(id) {
   return Article.find({ articleId: id })
 }
 
+function getByText(text) {
+  return Article.find({ $text: { $search: text } })
+}
+
 function updateById(id, articleInfoToUpdate) {
   return Article.findByIdAndUpdate(id, articleInfoToUpdate)
 }
@@ -27,5 +31,6 @@ module.exports = {
   deleteById,
   getAll,
   getById,
-  updateById
+  updateById,
+  getByText
 }

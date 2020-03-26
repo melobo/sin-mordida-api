@@ -8,6 +8,17 @@ const router = express.Router()
 
 router.get('/', async (request, response) => {
   try {
+    if (request.query.text) {
+      const articleFound = await article.getByText(request.query.text)
+
+      response.json({
+        success: true,
+        message: 'Article found',
+        data: {
+          article: articleFound
+        }
+      })
+    }
     const allArticles = await article.getAll()
     response.json({
       success: true,
