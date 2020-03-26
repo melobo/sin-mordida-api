@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const articleSchema = new mongoose.Schema({
   articleId: {
     type: Number,
-    required: true,
+    required: true
   },
   abstract: {
     type: String,
