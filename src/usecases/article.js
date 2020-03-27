@@ -19,7 +19,8 @@ function getById(id) {
 }
 
 function getByText(text) {
-  return Article.find({ tags: { $in: [text] } })
+  // return Article.find({ tags: { $in: [text] } })
+  return Article.find({ tags: { $in: text.split(' ') } })
 }
 
 function updateById(id, articleInfoToUpdate) {
