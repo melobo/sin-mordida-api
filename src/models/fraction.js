@@ -35,6 +35,4 @@ const fractionSchema = new mongoose.Schema({
   }
 })
 
-fractionSchema.index({ fractionText: "text" })
-
 module.exports = mongoose.model('Fraction', fractionSchema)

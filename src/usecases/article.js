@@ -19,7 +19,7 @@ function getById(id) {
 }
 
 function getByText(text) {
-  return Article.find({ $text: { $search: text } })
+  return Article.find({ tags: { $in: [text] } })
 }
 
 function updateById(id, articleInfoToUpdate) {

@@ -18,10 +18,6 @@ function getById(id) {
   return Fraction.find({ fractionId: id })
 }
 
-function getByText(text) {
-  return Fraction.find({ $text: { $search: text } })
-}
-
 function updateById(id, fractionInfoToUpdate) {
   return Fraction.findByIdAndUpdate(id, fractionInfoToUpdate)
 }
@@ -31,6 +27,5 @@ module.exports = {
   deleteById,
   getAll,
   getById,
-  updateById,
-  getByText
+  updateById
 }
