@@ -19,7 +19,6 @@ const articleSchema = new mongoose.Schema({
   },
   table: {
     type: String,
-    minlength: 3,
     trim: true,
     toLowerCase: true,
     default: ''
